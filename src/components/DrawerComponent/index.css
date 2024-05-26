@@ -6,7 +6,7 @@
   z-index: 10;
   left: 0;
   min-height: 0;
-  background-color: rgba(30, 29, 29, 0.45);
+  background-color: rgba(30, 29, 29, 0.6);
 }
 .home-page-left-small-container-bg {
   height: 100%;
@@ -81,7 +81,7 @@
 /* Styles for screens wider than 767px */
 @media (min-width: 767px) {
   .drawer-main-container {
-    width: 3rem;
+    width: 100%;
   }
 }
 
