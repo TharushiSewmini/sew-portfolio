@@ -1,5 +1,5 @@
 import "./index.css";
-import arrowleft from "../../assets/left.png";
+import Arrowleft from "../../assets/left.png";
 
 interface DrawerComponentProps {
   isExpand: boolean;
@@ -39,7 +39,7 @@ const DrawerComponent = ({ isExpand, onClick }: DrawerComponentProps) => {
           </div>
           <div className="home-page-left-small-c-right">
             <img
-              src={arrowleft}
+              src={Arrowleft}
               className="home-page-left-small-arrow-right"
               onClick={onClick}
               alt="Arrow Left"
