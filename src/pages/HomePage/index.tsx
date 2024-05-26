@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import myPic from "../../assets/new.png";
-import ReusableButton from "../../components/ReusableButton";
+import ReusableButton from "../../components/ReusableButtonComponenet";
 import arrow from "../../assets/right.png";
 
 import social from "../../assets/instagram.png";
@@ -14,7 +14,7 @@ const HomePage = () => {
   const [isExpand, setExpand] = useState(false);
   const chnagingState = () => {
     console.log("clicked");
-    
+
     setExpand(!isExpand);
   };
   return (
@@ -23,14 +23,12 @@ const HomePage = () => {
         className="home-page-left-expand-mark"
         style={{
           display: isExpand ? "none" : "flex",
-          
         }}
         onClick={chnagingState}
       >
         <img
           src={arrow}
           className="home-page-left-small-arrow-right"
-         
           style={{
             display: "flex",
           }}
@@ -38,14 +36,11 @@ const HomePage = () => {
       </div>
       {/* left */}
       {isExpand == true && (
-        <DrawerComponent
-          isExpand={isExpand}
-          onClick={chnagingState}
-        />
+        <DrawerComponent isExpand={isExpand} onClick={chnagingState} />
       )}
       {/* right */}
       <div className="home-page-right-big-container">
-      <div className="home-page-image-c">
+        <div className="home-page-image-c">
           <img src={myPic} alt="" className="home-page-right-big-c-image-c" />
         </div>
         <div className="home-page-right-big-c-details">
@@ -63,15 +58,27 @@ const HomePage = () => {
             </div>
             <ReusableButton />
             <div className="home-page-contact-circle-sction">
-              <ContactCircle imagePath={social} />
+              <ContactCircle
+                imagePath={social}
+                linkAddress={
+                  "https://www.instagram.com/coding.sew?igsh=MXdkZG1xYXI3cHhraQ=="
+                }
+              />
 
-              <ContactCircle imagePath={facebook} />
-              <ContactCircle imagePath={linkdin} />
-              <ContactCircle imagePath={github} />
+              <ContactCircle imagePath={facebook} linkAddress={"https://www.facebook.com/profile.php?id=100079223340313&mibextid=ZbWKwL"} />
+              <ContactCircle
+                imagePath={linkdin}
+                linkAddress={
+                  "https://www.linkedin.com/in/sewmini-rathnaweera-071530252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                }
+              />
+              <ContactCircle
+                imagePath={github}
+                linkAddress={"https://github.com/TharushiSewmini"}
+              />
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );

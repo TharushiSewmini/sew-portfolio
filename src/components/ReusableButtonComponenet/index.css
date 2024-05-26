@@ -22,3 +22,7 @@
 .reusable-button-c:focus-within {
   border: none;
 }
+.reusable-btn-cv-download{
+  text-decoration: none;
+  color: white;
+}
