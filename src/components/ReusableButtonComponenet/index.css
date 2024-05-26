@@ -17,7 +17,8 @@
   align-items: center;
   justify-content: center;
   border: 0.1rem solid rgb(218, 174, 187);
-  
+  transition: transform 1s ease;
+  transform-origin: left center; 
 }
 .reusable-button-c:focus-within {
   border: none;
@@ -25,4 +26,7 @@
 .reusable-btn-cv-download{
   text-decoration: none;
   color: white;
+}
+.reusable-button-c:hover{
+  transform: scaleX(1.2);
 }

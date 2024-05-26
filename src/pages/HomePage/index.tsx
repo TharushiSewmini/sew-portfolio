@@ -3,7 +3,9 @@ import "./index.css";
 import myPic from "../../assets/new.png";
 import ReusableButton from "../../components/ReusableButtonComponenet";
 import arrow from "../../assets/right.png";
-
+import sakura from "../../assets/sakura.png";
+import sakura2 from "../../assets/sakura2.png";
+import sakura3 from "../../assets/sakura3.png";
 import social from "../../assets/instagram.png";
 import facebook from "../../assets/facebook.png";
 import github from "../../assets/github.png";
@@ -19,6 +21,24 @@ const HomePage = () => {
   };
   return (
     <div className="home-page-container">
+      <div className="home-animations">
+        <img src={sakura} className="sakura-1" />
+      </div>
+      <div className="home-animations">
+        <img src={sakura2} className="sakura-2" />
+      </div>
+      <div className="home-animations">
+        <img src={sakura3} className="sakura-3" />
+      </div>
+      <div className="home-animations">
+        <img src={sakura} className="sakura-4" />
+      </div>
+      <div className="home-animations">
+        <img src={sakura2} className="sakura-5" />
+      </div>
+      <div className="home-animations">
+        <img src={sakura3} className="sakura-6" />
+      </div>
       <div
         className="home-page-left-expand-mark"
         style={{
@@ -65,7 +85,12 @@ const HomePage = () => {
                 }
               />
 
-              <ContactCircle imagePath={facebook} linkAddress={"https://www.facebook.com/profile.php?id=100079223340313&mibextid=ZbWKwL"} />
+              <ContactCircle
+                imagePath={facebook}
+                linkAddress={
+                  "https://www.facebook.com/profile.php?id=100079223340313&mibextid=ZbWKwL"
+                }
+              />
               <ContactCircle
                 imagePath={linkdin}
                 linkAddress={
