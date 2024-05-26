@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import "./index.css";
 import arrowleft from "../../assets/left.png";
 interface DrawerComponentProps {
